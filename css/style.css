@@ -129,7 +129,7 @@ h1 span {
   transform: translate(-50%, -50%);
 }
 
-.heart-placeholder {
+.heart-artwork {
   display: grid;
   width: min(88vw, 68svh, 42rem);
   aspect-ratio: 1;
@@ -141,18 +141,12 @@ h1 span {
   transform: translateY(-1%);
 }
 
-.heart-placeholder span {
+.heart-svg {
   display: block;
-  color: #f53259;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(9rem, 54vmin, 37rem);
-  font-weight: 400;
-  line-height: 0.78;
-  text-shadow:
-    0 0 0.035em rgb(255 210 220 / 65%),
-    0 0 0.18em rgb(255 35 85 / 42%),
-    0 0 0.42em rgb(219 13 57 / 25%);
-  transform: translateY(-0.015em);
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  fill: currentColor;
 }
 
 .stage-caption {
@@ -193,12 +187,8 @@ h1 span {
     margin-top: 0.65rem;
   }
 
-  .heart-placeholder {
+  .heart-artwork {
     width: min(92vw, 62svh);
-  }
-
-  .heart-placeholder span {
-    font-size: clamp(9rem, 55vmin, 24rem);
   }
 
   .stage-caption {
@@ -227,12 +217,8 @@ h1 span {
     font-size: 0.85rem;
   }
 
-  .heart-placeholder {
+  .heart-artwork {
     width: min(48vw, 52svh);
-  }
-
-  .heart-placeholder span {
-    font-size: clamp(7rem, 42vmin, 20rem);
   }
 
   .stage-caption {
