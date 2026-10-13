@@ -6,23 +6,28 @@
     <meta name="theme-color" content="#10070c" />
     <meta
       name="description"
-      content="Herz is a small creative experiment in a living, animated heart made with HTML, CSS, SVG, and JavaScript."
+      content="Herz is a full-screen, responsive heart stage built with HTML, CSS, and vanilla JavaScript."
     />
-    <title>Herz — Animated Heart Experience</title>
+    <title>Herz — Full-Screen Heart Stage</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <main class="experience" aria-labelledby="page-title">
-      <p class="eyebrow">A LITTLE EXPERIMENT IN MOTION</p>
-      <h1 id="page-title">Herz<span aria-hidden="true">.</span></h1>
-      <p class="intro">
-        Something alive is taking shape.
-      </p>
+      <header class="experience-header">
+        <p class="eyebrow">A LITTLE EXPERIMENT IN MOTION</p>
+        <h1 id="page-title">Herz<span aria-hidden="true">.</span></h1>
+        <p class="intro">Something alive is taking shape.</p>
+      </header>
 
-      <section class="heart-stage" aria-label="Heart animation preview">
+      <section
+        class="heart-stage"
+        aria-label="Heart animation preview"
+        aria-describedby="stage-caption"
+      >
+        <div class="stage-glow" aria-hidden="true"></div>
         <div class="heart-placeholder" aria-hidden="true">
-          <span>♡</span>
+          <span>♥</span>
         </div>
         <p class="stage-caption" id="stage-caption">
           The heart is still finding its rhythm.
